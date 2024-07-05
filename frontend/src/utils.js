@@ -1,1 +1,1 @@
-export const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/task';
+export const API_URL = 'https://5737tdv23xv7fybqx7nd5ttmhu0lesjw.lambda-url.us-east-1.on.aws/task';
