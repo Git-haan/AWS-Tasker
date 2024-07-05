@@ -1,0 +1,87 @@
+.container {
+  margin: 40px 40px 0px 40px;
+}
+
+.task-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.addTaskForm {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+
+.taskButtons {
+    justify-content: end;
+    align-items: end;
+    display: flex;
+    gap: 5px;
+}
+
+.taskName {
+    word-wrap: break-word;
+    max-width: 250px;
+    font-weight: 800;
+  }
+
+.dialog {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .task {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .addTaskForm {
+        padding-top: 20px;
+        grid-template-columns: auto 1fr;
+    }
+    .task-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
+    .taskName {
+        max-width: 100%;
+    }
+}
+
