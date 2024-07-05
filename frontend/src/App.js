@@ -10,6 +10,7 @@ export default function App() {
   const fetchTasks = async () => {
     try {
       const { data } = await axios.get(API_URL);
+      setTasks(data);
     } catch (error) {
       console.error('Error fetching tasks', error);
     }
