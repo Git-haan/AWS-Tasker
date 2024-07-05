@@ -3,6 +3,7 @@ import { Dialog, DialogTitle, TextField } from "@mui/material";
 import CheckIcon from '@mui/icons-material/Check';
 import React, {useState} from "react";
 import axios from "axios";
+import { API_URL } from "../utils";
 
 export const UpdateTask = ({ fetchTasks, isDialogueOpen, setIsDialogueOpen, task }) => {
     const { id, completed } = task;
